@@ -10,6 +10,8 @@ const AuthLinks = () => {
   const  status  ="authenticated";
   return (
     <>
+    {/* if we havemultiple classes we have to write like className={`${styles.link} ${styles.link}`} */}
+
       {status === "notauthenticated" ? (
         <Link href="/login" className={styles.link}>
           Login
@@ -41,6 +43,7 @@ const AuthLinks = () => {
               <Link href="/write">Write</Link>
               <span className={styles.link}>Logout</span> 
              {/* issue */}
+
             </>
           )}
         </div>
